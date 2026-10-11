@@ -64,5 +64,24 @@ During the development of this hackathon project, **Token Factory** drastically 
 
 ### Step 1: Clone the Repository
 ```bash
-git clone [https://github.com/your-username/agri-rover.git](https://github.com/your-username/agri-rover.git)
+git clone (https://github.com/kgroboop/agri-rover.git)
 cd agri-rover
+
+'Step 2: Flash the Upper Module (Vision & Edge AI)
+Open the upper module code (/code/upper_module/brain.ino) in Arduino IDE.
+
+Select your board: Seeed Studio XIAO ESP32S3.
+
+Configure Partition Scheme to Huge APP (3MB No OTA/1MB SPIFFS).
+
+Connect the board via USB-C and click Upload.
+
+Step 3: Flash the Lower Module (Actuation & Telemetry)
+Open (/code/lower_module/driver.ino) in Arduino IDE.
+
+Select your board: NodeMCU 1.0 / ESP-12E Module (or equivalent ESP8266 board).
+
+Upload the motor and sensor actuation code.'
+
+📜 License
+This project is open-source and licensed under the MIT License. See the LICENSE file for details.
